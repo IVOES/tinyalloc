@@ -1,0 +1,26 @@
+tinyalloc.c:136:20: style:inconclusive: Function 'ta_free' argument 1 names different: declaration 'ptr' definition 'free'. [funcArgNamesDifferent]
+bool ta_free(void *free) {
+                   ^
+tinyalloc.h:11:20: note: Function 'ta_free' argument 1 names different: declaration 'ptr' definition 'free'.
+bool ta_free(void *ptr);
+                   ^
+tinyalloc.c:136:20: note: Function 'ta_free' argument 1 names different: declaration 'ptr' definition 'free'.
+bool ta_free(void *free) {
+                   ^
+tinyalloc.c:216:0: style: The function 'ta_alloc' is never used. [unusedFunction]
+
+^
+tinyalloc.c:237:0: style: The function 'ta_calloc' is never used. [unusedFunction]
+
+^
+tinyalloc.c:268:0: style: The function 'ta_check' is never used. [unusedFunction]
+
+^
+tinyalloc.c:136:0: style: The function 'ta_free' is never used. [unusedFunction]
+
+^
+tinyalloc.c:114:0: style: The function 'ta_init' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
